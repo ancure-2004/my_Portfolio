@@ -3,16 +3,13 @@ import React, { useState } from "react";
 import { motion } from "motion/react";
 import { cn } from "@/lib/utils";
 
-
 export const PinContainer = ({
-  name,
   children,
   title,
   href,
   className,
   containerClassName,
 }: {
-  name: string;
   children: React.ReactNode;
   title?: string;
   href?: string;
