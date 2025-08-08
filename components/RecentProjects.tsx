@@ -34,9 +34,9 @@ const RecentProjects = () => {
 						viewport={{once: false}}
 					>
 						{/* LEFT: Image with PinContainer */}
-						<div className="w-full lg:w-[50%] flex justify-center">
+						<div className="w-full h-full lg:w-[50%] flex justify-center">
 							<PinContainer title={item.name} href={item.link}>
-								<div className="relative flex items-center justify-center sm:w-[500px] w-[500px] h-[500px] aspect-square overflow-hidden sm:h-[40vh]">
+								<div className="relative flex items-center justify-center sm:w-[500px] w-[80vw] overflow-hidden sm:h-[40vh] h-[30vh]">
 									<div
 										className="relative w-full h-full overflow-hidden lg:rounded-3xl"
 										style={{backgroundColor: "#13162D"}}
