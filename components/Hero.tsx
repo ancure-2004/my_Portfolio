@@ -1,27 +1,16 @@
 import React from "react";
-import {Spotlight} from "./ui/Spotlight";
-import {cn} from "@/lib/utils";
-import {TextGenerateEffect} from "./ui/TextGenerateEffect";
-import MagicButton from "./ui/MagicButton";
-import {FaLocationArrow} from "react-icons/fa";
+import { FaLocationArrow } from "react-icons/fa";
 import { FaDownload } from "react-icons/fa6";
 
-const Hero = () => {
-	return (
-		<div className="pb-20 pt-20">
-			<div>
-				<Spotlight
-					className="-top-40 -left-10 md:-left-32 md:top-20 h-screen"
-					fill="white"
-				/>
-				<Spotlight
-					className="top-10 left-full h-[80vh] w-[50vw]"
-					fill="purple"
-				/>
-				<Spotlight className="top-28 left-80 h-[80vh] w-[50vw]" fill="blue" />
-			</div>
+import { cn } from "@/lib/utils";
+import { TextGenerateEffect } from "./ui/TextGenerateEffect";
+import MagicButton from "./ui/MagicButton";
+import Spline from '@splinetool/react-spline/next';
 
-			<div className="flex h-screen w-full items-center justify-center bg-white dark:bg-black-100 absolute top-0 left-0">
+const Hero1 = () => {
+  return (
+		<div className="pt-10 overflow-visible">
+			{/* <div className="flex h-screen w-full items-center justify-center bg-white dark:bg-black-100 absolute top-0 left-0">
 				<div
 					className={cn(
 						"absolute inset-0",
@@ -31,23 +20,23 @@ const Hero = () => {
 					)}
 				/>
 				<div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black-100" />
-			</div>
-
-			<div className="flex justify-center relative my-20 z-10">
-				<div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
+			</div> */}
+  
+			<div className="flex justify-center lg:flex-col lg:justify-between relative my-20 lg:mt-20 z-10 overflow-visible lg:min-h-[600px]">
+				<div className="max-w-[89vw] md:max-w-2xl lg:max-w-[40vw] flex flex-col items-center justify-center lg:items-start lg:pl-10">
 					<h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-90">
 						Web Dev Learner | Passionate Builder | Tech Explorer
 					</h2>
-
+  
 					<TextGenerateEffect
-						className="text-center text-[40px] md:text-5xl lg:text-6xl"
+						className="text-center lg:text-left text-[30px] md:text-4xl lg:text-5xl"
 						words="Turning Curiosity into Real-World Web Projects"
 					/>
-
+  
 					<p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
 						Hi, I&apos;m Ankur — a Full Stack Developer..
 					</p>
-
+  
 					<div className="flex flex-row gap-4">
 						<a href="#projects">
 							<MagicButton
@@ -69,9 +58,13 @@ const Hero = () => {
 						</a>
 					</div>
 				</div>
+				<Spline
+					className="hidden lg:block absolute xl:right-[-28%] right-0 top-[-25%] overflow-visible h-[500px] lg:h-[500px] xl:h-[500px]"
+					scene="https://prod.spline.design/y64kBFLZLkpUzeS9/scene.splinecode" 
+				/>
 			</div>
 		</div>
 	);
 };
 
-export default Hero;
+export default Hero1;

@@ -51,8 +51,6 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
-  const leftLists = ["ReactJS", "Express", "Typescript"];
-  const rightLists = ["NodeJs", "NextJS", "MongoDB"];
 
   const [copied, setCopied] = useState(false);
 
@@ -116,8 +114,21 @@ export const BentoGridItem = ({
             "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10"
           )}
         >
-          <div className="font-sans font-extralight md:max-w-32 md:text-xs lg:text-base text-sm text-[#C1C2D3] z-10">
+          <div className="font-sans font-extralight md:max-w-full md:text-xs lg:text-base text-sm text-[#C1C2D3] z-10">
             {description}
+            {id == 1 && (
+              <div className="mt-7">
+                <p className="mt-7">
+                  A full-stack developer passionate about building seamless, high-performance web applications from front to back.
+                </p>
+                <p className="mt-7">
+                  I craft engaging, interactive interfaces with modern JavaScript frameworks while also architecting robust, scalable backends.
+                </p>
+                <p className="mt-7">
+                  Whether it&apos;s designing smooth user experiences or optimizing server-side logic, I love turning ideas into fully realized digital products.
+                </p>
+              </div>
+            )}
           </div>
           <div
             className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10`}

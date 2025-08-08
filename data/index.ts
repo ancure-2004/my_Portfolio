@@ -1,19 +1,19 @@
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
+  { name: "Achievements", link: "#achievements" },
   { name: "Contact", link: "#contact" },
 ];
 
 export const gridItems = [
   {
     id: 1,
-    title: "I love teaming up on cool ideas — whether you're a founder, developer, or just curious..",
-    description: "",
+    title: "",
+    description: "I am Ankur Tyagi",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
-    img: "/b1.svg",
+    // img: "/b1.svg",
     spareImg: "",
   },
   {

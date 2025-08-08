@@ -13,6 +13,7 @@
     "@react-three/drei": "^10.6.1",
     "@react-three/fiber": "^9.0.0-alpha.8",
     "@sentry/nextjs": "^10.2.0",
+    "@splinetool/react-spline": "^4.1.0",
     "clsx": "^2.1.1",
     "mini-svg-data-uri": "^1.4.4",
     "motion": "^12.23.12",

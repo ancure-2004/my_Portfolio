@@ -8,7 +8,7 @@ import { LinkPreview } from "./ui/LinkPreview";
 
 const RecentProjects = () => {
   return (
-    <div id="projects" className="py-20 mt-10">
+    <div id="projects" className="pt-20 mt-10">
       <h1 className="heading">
         A small selection of{" "}
         <span className="text-purple">recent projects</span>
