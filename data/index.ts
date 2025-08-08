@@ -68,7 +68,8 @@ export const projects = [
     img: "/p1.svg",
     iconLists: ["/re.svg", "/tail.svg", "/node.svg", "/three.svg", "/mongodb.svg"],
     link: "https://github.com/ancure-2004/Zephyros-AI-Code-Editor",
-    name: "./Zephyros"
+    name: "./Zephyros",
+    video: "/video.mp4"
   },
   {
     id: 2,
@@ -77,8 +78,8 @@ export const projects = [
     img: "/p2.svg",
     iconLists: ["/re.svg", "/tail.svg", "/node.svg", "/gsap.svg", "/mongodb.svg"],
     link: "https://github.com/ancure-2004/Velora",
-    name: "./Velora"
-
+    name: "./Velora",
+    video: ""
   },
   {
     id: 3,
@@ -87,7 +88,8 @@ export const projects = [
     img: "/p3.svg",
     iconLists: ["/re.svg", "/tail.svg", "/javascript.svg", "/three.svg", "/gsap.svg"],
     link: "https://github.com/ancure-2004/Wallet-Flow",
-    name: "./WalletFlow"
+    name: "./WalletFlow",
+    video: ""
   },
   {
     id: 4,
@@ -96,7 +98,8 @@ export const projects = [
     img: "/p4.svg",
     iconLists: ["/re.svg", "/tail.svg", "/github.svg", "/javascript.svg", "/gsap.svg"],
     link: "https://github.com/ancure-2004/kipin-notes-saving-app",
-    name: "./Kipin"
+    name: "./Kipin",
+    video: ""
   },
 ];
 
