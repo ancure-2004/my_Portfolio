@@ -66,20 +66,24 @@ export const projects = [
     title: "Zephyros - Collaborative AI Code Editor",
     des: "A real-time collaborative code editor with live chat, built-in AI assistant, and the ability to run servers directly in the browser.",
     img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/node.svg", "/three.svg", "/mongodb.svg"],
+    iconLists: ["/re.svg", "/tail.svg", "/node.svg","/mongodb.svg", "/three.svg"],
+    toolNames: ["React.js","Tailwind CSS","Node.js","MongoDB", "Three.js"],
     link: "https://github.com/ancure-2004/Zephyros-AI-Code-Editor",
     name: "./Zephyros",
-    video: ""
+    video: "",
+    live: "https://ankurtyagi.vercel.app/",
   },
   {
     id: 2,
     title: "Velora - Ride Booking App",
     des: "A mobile-first ride booking app with captain and user roles, real-time ride updates via Socket.IO, and live tracking of rides",
     img: "/p2.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/node.svg", "/gsap.svg", "/mongodb.svg"],
+    iconLists: ["/re.svg", "/tail.svg", "/node.svg","/mongodb.svg", "/gsap.svg" ],
+    toolNames: ["React.js","Tailwind CSS","Node.js", "MongoDB", "GSAP",],
     link: "https://github.com/ancure-2004/Velora",
     name: "./Velora",
-    video: ""
+    video: "",
+    live: "",
   },
   {
     id: 3,
@@ -87,9 +91,11 @@ export const projects = [
     des: "A modern expense tracker with real-time syncing, smart categorization, and seamless budget management across devices.",
     img: "/p3.svg",
     iconLists: ["/re.svg", "/tail.svg", "/javascript.svg", "/three.svg", "/gsap.svg"],
+    toolNames: ["React.js","Tailwind CSS","JavaScript", "Three.js", "GSAP"],
     link: "https://github.com/ancure-2004/Wallet-Flow",
     name: "./WalletFlow",
-    video: ""
+    video: "",
+    live: "",
   },
   {
     id: 4,
@@ -97,9 +103,11 @@ export const projects = [
     des: "A simple note-saving app with offline support using local storage for quick and easy access.",
     img: "/p4.svg",
     iconLists: ["/re.svg", "/tail.svg", "/github.svg", "/javascript.svg", "/gsap.svg"],
+    toolNames: ["React.js","Tailwind CSS","Github", "JavaScript", "GSAP"],
     link: "https://github.com/ancure-2004/kipin-notes-saving-app",
     name: "./Kipin",
-    video: ""
+    video: "",
+    live: "",
   },
 ];
 

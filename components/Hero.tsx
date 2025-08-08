@@ -10,7 +10,7 @@ import Spline from '@splinetool/react-spline/next';
 const Hero1 = () => {
   return (
 		<div className="pt-10 overflow-visible">
-			{/* <div className="flex h-screen w-full items-center justify-center bg-white dark:bg-black-100 absolute top-0 left-0">
+			<div className="lg:hidden flex h-screen w-full items-center justify-center bg-white dark:bg-black-100 absolute top-0 left-0">
 				<div
 					className={cn(
 						"absolute inset-0",
@@ -20,7 +20,7 @@ const Hero1 = () => {
 					)}
 				/>
 				<div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black-100" />
-			</div> */}
+			</div>
   
 			<div className="flex justify-center lg:flex-col lg:justify-between relative my-20 lg:mt-20 z-10 overflow-visible lg:min-h-[600px]">
 				<div className="max-w-[89vw] md:max-w-2xl lg:max-w-[40vw] flex flex-col items-center justify-center lg:items-start lg:pl-10">
@@ -29,15 +29,15 @@ const Hero1 = () => {
 					</h2>
   
 					<TextGenerateEffect
-						className="text-center lg:text-left text-[30px] md:text-4xl lg:text-5xl"
+						className="text-center lg:text-left text-[25px] md:text-3xl lg:text-4xl"
 						words="Turning Curiosity into Real-World Web Projects"
 					/>
   
-					<p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
+					<p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl mt-4">
 						Hi, I&apos;m Ankur — a Full Stack Developer..
 					</p>
   
-					<div className="flex flex-row gap-4">
+					<div className="flex flex-row gap-4 mt-10">
 						<a href="#projects">
 							<MagicButton
 								title="Show my Work"
