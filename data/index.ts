@@ -69,7 +69,7 @@ export const projects = [
     iconLists: ["/re.svg", "/tail.svg", "/node.svg", "/three.svg", "/mongodb.svg"],
     link: "https://github.com/ancure-2004/Zephyros-AI-Code-Editor",
     name: "./Zephyros",
-    video: "/video.mp4"
+    video: ""
   },
   {
     id: 2,
