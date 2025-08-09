@@ -11,7 +11,7 @@ import {image} from "motion/react-client";
 
 const RecentProjects = () => {
 	return (
-		<div id="projects" className="pt-20 pb-20 mt-10">
+		<div id="projects" className="pt-10 pb-20">
 			<motion.h1
 				className="heading"
 				initial={{opacity: 0, y: 30}}
@@ -54,29 +54,40 @@ const RecentProjects = () => {
 
 						{/* RIGHT: Text + Details */}
 						<div className="w-full lg:w-[50%] flex flex-col justify-center">
-							<h1 className="font-bold lg:text-2xl md:text-xl text-lg line-clamp-1">
+							<h1 className="font-bold lg:text-2xl md:text-xl text-lg line-clamp-1 lg:mb-4">
 								{item.title}
 							</h1>
-							<p className="lg:text-lg font-light text-sm text-[#BEC1DD] my-4 line-clamp-3">
-								{item.des}
-							</p>
+							{Array.isArray(item.des) ? (
+								<ul className="space-y-3 lg:space-y-5">
+									{" "}
+									{/* Adds vertical gap between points */}
+									{item.des.map((point, i) => (
+										<li
+											key={i}
+											className="flex items-start gap-2 text-[#BEC1DD] lg:text-lg font-light"
+										>
+											<span className="text-purple-400 mt-1">▹</span>{" "}
+											{/* Custom bullet */}
+											<span>{point}</span>
+										</li>
+									))}
+								</ul>
+							) : (
+								<p className="lg:text-lg font-light text-sm text-[#BEC1DD] my-4 line-clamp-3 mt-1">
+									{item.des}
+								</p>
+							)}
 
-							<div className="flex flex-row item-center justify-between">
+							<div className="flex flex-row item-center justify-between lg:mt-2">
 								{/* Links */}
-								<div className="flex items-center justify-between gap-2">
-									<LinkPreview
-										url={item.link}
-										videoSrc={item.video}
-									>
+								<div className="flex items-center justify-between gap-3">
+									<LinkPreview id='1' url={item.link} videoSrc={item.video}>
 										<p className="flex items-center mt-4 text-purple lg:text-xl text-sm">
 											Live
 											<FaLink className="ml-2" color="#CBACF9" />
 										</p>
 									</LinkPreview>
-									<LinkPreview
-										url={item.link}
-										videoSrc={item.video}
-									>
+									<LinkPreview id='2' url={item.link}>
 										<p className="flex items-center mt-4 text-purple lg:text-xl text-sm">
 											Code
 											<FaGithub className="ml-2" color="#CBACF9" />
@@ -85,21 +96,21 @@ const RecentProjects = () => {
 								</div>
 
 								{/* Tech stack icons */}
-                <div
-                  className="rounded-full flex justify-center items-center"
-                  style={{
-                    transform: `translateX(-${5 * index * 2}px)`,
-                  }}
-                >
-                  <AnimatedTooltip
-                    items={item.iconLists.map((icon, idx) => ({
-                      id: idx,
-                      name: item.toolNames[idx],
-                      designation: "",
-                      image: icon,
-                    }))}
-                  />
-                </div>
+								<div
+									className="rounded-full flex justify-center items-center gap-2 sm:gap-0"
+									style={{
+										transform: `translateX(-${5 * index * 2}px)`,
+									}}
+								>
+									<AnimatedTooltip
+										items={item.iconLists.map((icon, idx) => ({
+											id: idx,
+											name: item.toolNames[idx],
+											designation: "",
+											image: icon,
+										}))}
+									/>
+								</div>
 							</div>
 						</div>
 					</motion.div>

@@ -10,7 +10,7 @@ import Spline from '@splinetool/react-spline/next';
 const Hero1 = () => {
   return (
 		<div className="pt-10 overflow-visible">
-			<div className="lg:hidden flex h-screen w-full items-center justify-center bg-white dark:bg-black-100 absolute top-0 left-0">
+			<div className="flex h-screen w-full items-center justify-center bg-white dark:bg-black-100 absolute top-0 left-0">
 				<div
 					className={cn(
 						"absolute inset-0",
@@ -24,12 +24,12 @@ const Hero1 = () => {
   
 			<div className="flex justify-center lg:flex-col lg:justify-between relative my-20 lg:mt-20 z-10 overflow-visible lg:min-h-[600px]">
 				<div className="max-w-[89vw] md:max-w-2xl lg:max-w-[40vw] flex flex-col items-center justify-center lg:items-start lg:pl-10">
-					<h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-90">
+					<h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-90 sm:mb-5">
 						Web Dev Learner | Passionate Builder | Tech Explorer
 					</h2>
   
 					<TextGenerateEffect
-						className="text-center lg:text-left text-[25px] md:text-3xl lg:text-4xl"
+						className="text-center lg:text-left text-[25px] md:text-3xl lg:text-5xl"
 						words="Turning Curiosity into Real-World Web Projects"
 					/>
   
