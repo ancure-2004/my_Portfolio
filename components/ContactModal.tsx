@@ -70,10 +70,10 @@ export default function ContactModal({isOpen, onClose}: Props) {
 						<div className="relative bg-white/90 dark:bg-gray-900/90 backdrop-blur-xl rounded-2xl p-5">
 							<div className="text-center mb-5">
 								<h3 className="text-2xl font-bold bg-gradient-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-300 bg-clip-text text-transparent mb-1">
-									Let's Connect
+									Let&apos;s Connect
 								</h3>
 								<p className="text-gray-600 dark:text-gray-400 text-sm">
-									I'd love to hear from you ✨
+									I&apos;d love to hear from you ✨
 								</p>
 								<div className="w-10 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full mx-auto mt-2"></div>
 							</div>
