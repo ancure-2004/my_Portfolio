@@ -121,28 +121,16 @@ export const LinkPreview = ({
 							>
 								<a
 									href={url}
-									className="block p-1 bg-black-100 border-2 border-transparent shadow rounded-xl z-[9999]"
+									className="block p-1 bg-white-100 border-2 border-transparent shadow rounded-xl z-[9999]"
 									style={{fontSize: 0}}
 								>
 									{id == "1" && (
-										<video
-											src={videoSrc}
-											width={width * 2}
-											height={height * 2}
+										<img
+											src={videoSrc} // now your GIF path
+											width={width * 1.5}
+											height={height * 1.5}
 											className="rounded-lg"
-											autoPlay
-											loop
-											muted
-											playsInline
-											onLoadedMetadata={(e) => {
-												e.currentTarget.playbackRate = 2; // 2x speed
-											}}
-											onError={(e) => {
-												e.currentTarget.style.display = "none";
-												e.currentTarget.parentElement
-													?.querySelector("img")
-													?.classList.remove("hidden");
-											}}
+											alt="Zephyros Demo"
 										/>
 									)}
 									{id == "2" && (

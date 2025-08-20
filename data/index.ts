@@ -79,8 +79,8 @@ export const projects = [
 		toolNames: ["React.js", "Tailwind CSS", "Node.js", "MongoDB", "Three.js"],
 		link: "https://github.com/ancure-2004/Zephyros-AI-Code-Editor",
 		name: "./Zephyros",
-		video: "/Videos/Zephyros.mp4",
-		live: "https://ankurtyagi.vercel.app",
+		video: "/Videos/Zephyros.gif",
+		live: "",
 	},
 	{
 		id: 2,
@@ -100,8 +100,8 @@ export const projects = [
 		toolNames: ["React.js", "Tailwind CSS", "Node.js", "MongoDB", "GSAP"],
 		link: "https://github.com/ancure-2004/Velora",
 		name: "./Velora",
-		video: "/Videos/Zephyros.mp4",
-		live: "",
+		video: "/Videos/Velora.gif",
+		live: "https://velora-eight-rho.vercel.app/",
 	},
 	{
 		id: 3,
@@ -121,8 +121,8 @@ export const projects = [
 		toolNames: ["React.js", "Tailwind CSS", "JavaScript", "Three.js", "GSAP"],
 		link: "https://github.com/ancure-2004/Wallet-Flow",
 		name: "./WalletFlow",
-		video: "/Videos/WalletFlow.mp4",
-		live: "",
+		video: "/Videos/WalletFlow.gif",
+		live: "https://wallet-flow-sage.vercel.app/",
 	},
 	{
 		id: 4,
@@ -142,8 +142,8 @@ export const projects = [
 		toolNames: ["React.js", "Tailwind CSS", "Github", "JavaScript", "GSAP"],
 		link: "https://github.com/ancure-2004/kipin-notes-saving-app",
 		name: "./Kipin",
-		video: "/Videos/Kipin.mp4",
-		live: "",
+		video: "/Videos/Kipin.gif",
+		live: "https://kipin-notes-saving-app-4e5p.vercel.app/",
 	},
 ];
 

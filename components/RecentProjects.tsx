@@ -81,7 +81,7 @@ const RecentProjects = () => {
 							<div className="flex flex-row item-center justify-between lg:mt-2">
 								{/* Links */}
 								<div className="flex items-center justify-between gap-3">
-									<LinkPreview id='1' url={item.link} videoSrc={item.video}>
+									<LinkPreview id='1' url={item.live} videoSrc={item.video}>
 										<p className="flex items-center mt-4 text-purple lg:text-xl text-sm">
 											Live
 											<FaLink className="ml-2" color="#CBACF9" />
