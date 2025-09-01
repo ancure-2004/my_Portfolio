@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { FaLocationArrow } from "react-icons/fa";
 import { FaDownload } from "react-icons/fa6";
@@ -5,7 +7,7 @@ import { FaDownload } from "react-icons/fa6";
 import { cn } from "@/lib/utils";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import MagicButton from "./ui/MagicButton";
-import Spline from '@splinetool/react-spline/next';
+import Spline from "@splinetool/react-spline";
 
 const Hero1 = () => {
   return (
@@ -50,10 +52,10 @@ const Hero1 = () => {
 							target="_blank"
 							rel="noopener noreferrer"
 							download
-							className="relative inline-flex h-12 w-full overflow-hidden rounded-lg p-[1px] focus:outline-none md:w-60 md:mt-10"
+							className="relative inline-flex h-12 overflow-hidden rounded-lg p-[1px] focus:outline-none md:mt-10"
 							>
 							<span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)] pointer-events-none" />
-							<span className="gap-2 z-10 inline-flex h-full w-full items-center justify-center rounded-lg bg-slate-950 px-7 text-sm font-medium text-white backdrop-blur-3xl">
+							<span className="gap-2 z-10 inline-flex h-full items-center justify-center rounded-lg bg-slate-950 px-7 text-sm font-medium text-white backdrop-blur-3xl">
 								Download CV
 								<FaDownload />
 							</span>
